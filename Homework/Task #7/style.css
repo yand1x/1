@@ -1,0 +1,34 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@700&display=swap');
+
+body {
+    background-color: #111110;
+    color: #FBCF00;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+audio {
+	display: none;
+}
+
+.text-container {
+    font-size: 64px;
+    width: 910px;
+    animation: slidein 30s infinite;
+}
+
+@keyframes slidein {
+    from {
+        transform: perspective(400px) rotateX(15deg);
+    }
+
+    to {
+        transform: perspective(400px) rotateX(15deg) translateY(-50%);
+    }
+}
+
+.headline {
+    font-size: 58px;
+    text-align: center;
+}

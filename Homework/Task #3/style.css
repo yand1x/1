@@ -1,0 +1,313 @@
+@font-face {
+    font-family: "VerdanaPro-Regular";
+    src: url("/fonts/VerdanaPro-Regular.ttf") format("ttf");
+}
+
+@font-face {
+    font-family: "VerdanaPro-Bold";
+    src: url("/fonts/VerdanaPro-Bold.ttf") format("ttf");
+}
+
+@-webkit-keyframes slide-in {
+    from {
+        height: 0px;
+    }
+    to {
+        height: 63px;
+    }
+}
+
+@keyframes slide-in {
+    from {
+        height: 0px;
+    }
+    to {
+        height: 63px;
+    }
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+body {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    background-image: url(images/background.jpeg);
+    background-size: cover;
+    height: 100vh;
+}
+
+.content-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    width: 1366px;
+    height: 768px;
+}
+
+.content {
+    width: 1060px;
+    height: 700px;
+}
+
+.content-header {
+    width: 100%;
+    height: 46px;
+    margin-bottom: 45px;
+}
+
+.content-header .logo {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    font-size: 29px;
+    float: left;
+    height: 100%;
+    -webkit-transition: 0.1s ease;
+    transition: 0.1s ease;
+}
+
+.content-header .logo i {
+    font-size: 45px;
+    margin-right: 10px;
+}
+
+.content-header .logo h4 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    font-family: "VerdanaPro-Bold", sans-serif;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    letter-spacing: 1px;
+    color: #fff;
+    cursor: pointer;
+}
+
+.content-header .logo h4 span {
+    font-size: 18px;
+}
+
+.content-header .logo:hover i {
+    color: #f26522;
+}
+
+.content-header .logo:hover h4 {
+    color: #f26522;
+}
+
+.content-header .links {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    font-size: 18px;
+    font-family: "VerdanaPro-Regular", sans-serif;
+    letter-spacing: 1px;
+    line-height: 1.3;
+    -webkit-box-align: end;
+    -ms-flex-align: end;
+    align-items: flex-end;
+    float: right;
+    height: 100%;
+}
+
+.cards-container {
+    width: 1060px;
+    height: 545px;
+    margin-bottom: 61px;
+}
+
+.cards-container .cards-upper-part {
+    height: 243px;
+    margin-bottom: 58px;
+}
+
+.cards-container .cards-lower-part {
+    height: 243px;
+}
+
+.cards-container .card {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    height: 243px;
+    width: 312px;
+    float: left;
+    margin-right: 62px;
+}
+
+.cards-container .card .card-holder {
+    height: 200px;
+    margin-bottom: 22px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: end;
+    -ms-flex-align: end;
+    align-items: flex-end;
+}
+
+.cards-container .card .card-holder .card-image {
+    width: 312px;
+    height: 200px;
+    border: 2px solid;
+    border-image-source: linear-gradient(0deg, black 0%, white 100%);
+    border-image-slice: 1;
+    -webkit-box-shadow: 0px 17px 24px 0px black;
+    box-shadow: 0px 17px 24px 0px black;
+    position: absolute;
+    z-index: -1;
+}
+
+.cards-container .card .card-holder .card-footer {
+    visibility: hidden;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: end;
+    -ms-flex-align: end;
+    align-items: flex-end;
+    padding: 16px 21px;
+    overflow: hidden;
+    width: 100%;
+    height: 63px;
+    background: #f26522;
+}
+
+.cards-container .card .card-holder .card-footer .price p {
+    color: #fff;
+    font-family: "VerdanaPro-Regular", sans-serif;
+    font-size: 10px;
+}
+
+.cards-container .card .card-holder .card-footer .price h3 {
+    font-size: 20px;
+}
+
+.cards-container .card .card-holder .card-footer .details {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    color: #fff;
+    font-family: "VerdanaPro-Regular", sans-serif;
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+
+.cards-container .card .card-holder .card-footer .details a {
+    margin-right: 15px;
+}
+
+.cards-container .card .card-holder .card-footer .details .arrow {
+    width: 10px;
+    height: 20px;
+}
+
+.cards-container .card h3 {
+    text-align: center;
+    color: #fff;
+    font-size: 18px;
+    font-family: "VerdanaPro-Regular", sans-serif;
+    font-weight: 300;
+    letter-spacing: 1px;
+}
+
+.cards-container .card .card-title {
+    -webkit-transition: 0.1s ease;
+    transition: 0.1s ease;
+}
+
+.cards-container .card:hover .card-title {
+    color: #f26522;
+}
+
+.cards-container .card:hover .card-footer {
+    visibility: visible;
+    -webkit-animation: slide-in 0.1s;
+    animation: slide-in 0.1s;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+}
+
+.cards-container .card:nth-child(3) {
+    margin-right: 0px;
+}
+
+.content-footer {
+    color: #fff;
+    font-size: 14px;
+    text-align: center;
+    font-family: "VerdanaPro-Regular", sans-serif;
+}
+
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 10" width="7" height="10">
+	<defs>
+		<image  width="7" height="10" id="img1" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAcAAAAKBAMAAACK4lk+AAAAAXNSR0IB2cksfwAAABVQTFRF////////////////////////////Z0iB0QAAAAd0Uk5TAH8s/P9XgMFLQggAAAAmSURBVHicY2AUYGBgUHYEEqwmIGYwnMlqkgDkukEZykAGAxuQAQBc7AQ2c3rdkQAAAABJRU5ErkJggg=="/>
+	</defs>
+	<style>
+		tspan { white-space:pre }
+	</style>
+	<g id="Milan Holidays">
+		<g id="Tours">
+			<g id="Card 2">
+				<g id="Hover">
+					<use id="Arrow" style="opacity: 0.502" href="#img1" x="0" y="0" />
+				</g>
+			</g>
+		</g>
+	</g>
+</svg>
