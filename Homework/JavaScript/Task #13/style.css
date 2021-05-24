@@ -1,0 +1,48 @@
+:root {
+    --backgroundColor: #fff;
+    --active-background: #937341;
+    --inactive-background: #23201D;
+}
+
+.dark-theme {
+    --backgroundColor: #e3e3e;
+    --active-background: #0f0c06;
+    --inactive-background: #dd3939;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--backgroundColor)
+}
+
+ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.centered-content {
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.tabs {
+    display: flex;
+}
+
+.tabs-title {
+    padding: 20px;
+    background-color: var(--inactive-background);
+    color: var(--active-background);
+    cursor: pointer;
+}
+
+.tabs-title.active {
+    background-color:var(--active-background);
+    color: var(--inactive-background);
+}
